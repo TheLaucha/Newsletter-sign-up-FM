@@ -39,6 +39,7 @@ body {
 }
 
 .invalidMessage {
+  display: none;
   color: var(--Tomato);
 }
 

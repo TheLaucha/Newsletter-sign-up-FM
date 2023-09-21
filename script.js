@@ -23,6 +23,7 @@ const containerMessage = document.querySelector(".containerMessage")
 const btnMessage = document.querySelector(".btnMessage")
 const email = document.querySelector("#email")
 const emailTo = document.querySelector(".emailTo")
+const invalidMessage = document.querySelector(".invalidMessage")
 
 form.addEventListener("submit", showMessage)
 btnMessage.addEventListener("click", showForm)
@@ -35,12 +36,14 @@ function showMessage(e) {
   }
 
   if (validEmail) {
+    invalidMessage.style.display = "none"
     containerForm.style.display = "none"
     containerMessage.style.display = "flex"
     emailTo.textContent = email.value
     form.reset()
   } else {
     email.classList.add("invalid")
+    invalidMessage.style.display = "inline-block"
   }
 }
 
