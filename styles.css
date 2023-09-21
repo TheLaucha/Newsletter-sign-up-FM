@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --Tomato: #ff6257;
+  --Dark_Slate_Grey: hsl(234, 29%, 20%);
+  --Charcoal_Grey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--Charcoal_Grey);
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+}
+
+.containerForm {
+  display: flex;
+}
+
+.containerMessage {
+  display: none;
+}
+
+.container {
+  background-color: var(--White);
+}
+
+.form label {
+  color: var(--Dark_Slate_Grey);
+}
+
+.invalid {
+  outline: 1px solid var(--Tomato);
+  color: var(--Tomato);
+  border: 1px solid var(--Tomato);
+}
+
+.invalidMessage {
+  color: var(--Tomato);
+}
+
+.btnForm {
+  background: var(--Dark_Slate_Grey);
+  color: var(--White);
+  transition: background 0.2s;
+}
+
+.btnForm:hover {
+  background: rgb(255, 87, 172);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 87, 172, 1) 0%,
+    rgba(255, 98, 87, 1) 45%,
+    rgba(255, 143, 87, 1) 100%
+  );
+}
+
+.contImage {
+  width: 100%;
+}
+
+.containerImage {
+  width: 100%;
+}
+
+.checkImage {
+  width: 3rem;
+}
